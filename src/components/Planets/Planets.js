@@ -9,7 +9,6 @@ class Planets extends Component {
       planetList: []
     };
   }
-  
 
   componentDidMount = () => {
     console.log('app component mounted');
@@ -46,4 +45,4 @@ class Planets extends Component {
   }
 }
 
-export default Planet;
+export default Planets;
