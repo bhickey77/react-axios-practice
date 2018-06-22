@@ -12,7 +12,6 @@ class Planet extends Component {
             <div>{this.props.planet.name}</div>
             <div>{this.props.planet.climate}</div>
             <div>{this.props.planet.diameter}</div>
-
         </li>
     );
   }

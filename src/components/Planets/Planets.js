@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Planet from '../Planet/Planet';
 import axios from 'axios';
 
-class PlanetList extends Component {
+class Planets extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -46,4 +46,4 @@ class PlanetList extends Component {
   }
 }
 
-export default PlanetList;
+export default Planet;
