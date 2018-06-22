@@ -9,6 +9,13 @@ import './App.css';
 import { BrowserRouter as Router, Link, Route } from 'react-router-dom';
 
 class App extends Component {
+  constructor(){
+    super()
+    this.state = {
+      hi: 'sadfhihihi'
+    }
+
+  }
   render() {
     return (
       <Router>

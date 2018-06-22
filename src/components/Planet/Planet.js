@@ -8,13 +8,13 @@ class Planet extends Component {
   }
 
   render() {
-    console.log(this.props);
     return (    
       <Router>
         <li>
             <div>{this.props.planet.name}</div>
             <div>{this.props.planet.climate}</div>
             <div>{this.props.planet.diameter}</div>
+          </a>
         </li>
       </Router>
     );

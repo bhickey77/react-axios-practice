@@ -11,7 +11,7 @@ class Planets extends Component {
   }
 
   componentDidMount = () => {
-    console.log('app component mounted');
+    // console.log('app component mounted');
     this.getPlanets('https://swapi.co/api/planets/?format=json');
   }
 
@@ -24,17 +24,19 @@ class Planets extends Component {
             ...response.data.results 
           ]
         });
-        console.log('response data: ', response.data.results);
+        // console.log('response data: ', response.data.results);
         if(response.data.next){
           this.getPlanets(response.data.next);
         }
       })
       .catch(error => {
-        console.log('error: ', error);   
+        // console.log('error: ', error);   
       });
   }  
   
   render() {
+    console.log(this.state);
+    
     return (
       <ul>
         {this.state.planetList.map(planet => {
